@@ -1,11 +1,17 @@
 {
-    "name": "curso",
-    "version": "0.0.1",
-    "dependencies": {
-        "express": "3.11.x",
-        "jade": "0.28.2",
-        "swig": "0.13.5",
-        "consolidate": "0.8.0",
-        "socket.io": "0.9.13"
-    }
+  "name": "curso",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "4.16.0",
+    "jade": "0.28.2",
+    "swig": "0.13.5",
+    "consolidate": "0.8.0",
+    "socket.io": "0.9.13",
+    "snyk": "^1.118.2"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
